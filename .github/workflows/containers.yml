@@ -10,7 +10,7 @@ env:
 
 jobs:
   build-and-push-image:
-    name: Upload Asset to Release
+    name: Build and push images
     runs-on: ubuntu-latest
     permissions:
       contents: read
