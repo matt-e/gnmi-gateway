@@ -18,13 +18,8 @@ jobs:
     strategy:
       matrix:
         platform: [ 'linux' ]
-        architecture: [ 'amd64' ]
+        architecture: [ 'amd64' ] #, 'arm', 'arm64' ]
         image: [ 'prometheus', 'influxdb']
-        include:
-          - platform: linux
-            architecture: arm
-          - platform: linux
-            architecture: arm64
     steps:
       - name: Set up timezone
         uses: zcong1993/setup-timezone@v1.0
