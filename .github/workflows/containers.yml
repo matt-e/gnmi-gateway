@@ -6,7 +6,7 @@ name: Build and push prometheus image
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_BASE_NAME: ${{ github.repository }}-prometheus
+  IMAGE_NAME: ${{ github.repository }}-prometheus
 
 jobs:
   build-and-push-image:
